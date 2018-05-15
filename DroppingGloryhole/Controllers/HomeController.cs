@@ -13,17 +13,20 @@ namespace DroppingGloryhole.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Rules()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Rules page";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Combat()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public ActionResult Odds()
+        {
             return View();
         }
     }
