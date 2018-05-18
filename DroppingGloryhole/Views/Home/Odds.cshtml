@@ -2,11 +2,6 @@
 @{
     ViewBag.Title = "Odds";
 }
-@section JavaScript
-{
-    <script type="text/javascript" src="@Url.Content("/Scripts/garlic.js")"></script>
-
-}
 <h2>Todo: this too</h2>
 <h3>Duplicate Index page:</h3>
 <div class="container">
@@ -18,12 +13,12 @@
     </ul>
     <div class="tab-content">
         <div id="player1" class="tab-pane fade in active">
-            <form class="form-inline" id="player1form" data-persist="garlic" method="POST">
+            <form class="form-inline" id="player1form">
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon"><span>Battle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-                        <input type="number" class="form-control input-lg" id="battleCounter" value="0" min="0" max="3" min="0" max="3" style="width: 80px">
-                        <button type="button" class="btn btn-danger btn-outline-secondary" onclick='document.getElementById("battleCounter").stepDown(1); $("#battleCounter").trigger("change");'>-</button>
+                        <input type="number" class="form-control input-lg" id="battleCounter" value="0" min="0" max="3" style="width: 80px">
+                        <button type="button" class="btn btn-danger btn-outline-secondary" onclick='document.getElementById("battleCounter").stepDown(1); $("#battleCounter").trigger("change");'>-</button>&nbsp;
                         <button type="button" class="btn btn-success btn-outline-secondary" onclick='document.getElementById("battleCounter").stepUp(1); $("#battleCounter").trigger("change");'>+</button>
                     </div>
                 </div>
@@ -75,11 +70,10 @@
                         <button type="button" class="btn btn-success btn-outline-secondary" onclick='document.getElementById("shipCounter").stepUp(1)'>+</button>
                     </div>
                 </div>
-                <input class="btn hidden" type="submit" />
             </form>
         </div>
         <div id="player2" class="tab-pane fade">
-            <form id="player2form" class="form-inline"  data-persist="garlic">
+            <form id="player2form" class="form-inline" data-persist="garlic">
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon"><span>Battle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
@@ -139,7 +133,7 @@
             </form>
         </div>
         <div id="player3" class="tab-pane fade">
-            <form id="player3form" class="form-inline"  data-persist="garlic">
+            <form id="player3form" class="form-inline" data-persist="garlic">
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon"><span>Battle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
