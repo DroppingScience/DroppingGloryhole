@@ -1,8 +1,10 @@
 ﻿let subscribeEvents = function () {
     $("input").on('change', function () {
-        let key = $(this).attr('id');
-        let value = $(this).val();
-        localStorage.setItem(key, value);
+        if ($(this).attr("data-ignore-save") != "true") {
+            let key = $(this).attr('id');
+            let value = $(this).val();
+            localStorage.setItem(key, value);
+        }
     });
     $(".incrementBtn").on('click', function () {
         $(this).parent().find("input").val(function (i, oldVal) { return ++oldVal > 3 ? 3 : oldVal; });
@@ -15,7 +17,9 @@
 };
 let loadFormDataFromStorage = function () {
     $("input").each(function () {
-        $(this).val(localStorage.getItem($(this).attr("id")));
+        if ($(this).attr("data-ignore-save") != "true") {
+            $(this).val(localStorage.getItem($(this).attr("id")));
+        }
     });
 };
 $(document).ready(subscribeEvents);

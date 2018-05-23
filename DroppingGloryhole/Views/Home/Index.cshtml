@@ -3,10 +3,10 @@
 }
 <div class="container">
     <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#player1">Joseph</a></li>
-        <li><a data-toggle="tab" href="#player2">Jonathan</a></li>
-        <li><a data-toggle="tab" href="#player3">Zack</a></li>
-        <li><a data-toggle="tab" href="#options">Options</a></li>
+        <li class="active"><a data-toggle="tab" href="#player1" id="player1Tab">Joseph</a></li>
+        <li><a data-toggle="tab" href="#player2" id="player2Tab">Jonathan</a></li>
+        <li><a data-toggle="tab" href="#player3" id="player3Tab">Zack</a></li>
+        <li><a data-toggle="tab" href="#options" id="optionsTab">Options</a></li>
     </ul>
     <div class="tab-content">
         <div id="player1" class="tab-pane fade in active">
@@ -130,7 +130,7 @@
             </form>
         </div>
         <div id="player3" class="tab-pane fade">
-            <form id="player3form" class="form-inline" data-persist="garlic">
+            <form id="player3form" class="form-inline">
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-addon"><span>Battle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
@@ -191,7 +191,35 @@
         </div>
         <div id="options" class="tab-pane fade">
             <div class="container">
-                <button type="button" class="btn btn-warning" onclick="localStorage.clear();document.getElementById('player1form').reset();document.getElementById('player2form').reset();document.getElementById('player3form').reset();">Reset Glory</button>
+                <form id="playerOptionsForm" class="form-inline">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span>Player 1: </span></div>
+                            <input type="text" class="form-control" id="player1Name" value="Player1" data-ignore-save="true">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span>Player 2: </span></div>
+                            <input type="text" class="form-control" id="player2Name" value="Player2" data-ignore-save="true">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span>Player 3: </span></div>
+                            <input type="text" class="form-control" id="player3Name" value="Player3" data-ignore-save="true">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span>Player 4: </span></div>
+                            <input type="text" class="form-control" id="player4Name" value="Player4" data-ignore-save="true">
+                        </div>
+                    </div>
+                </form>
+
+
+                    <button type="button" class="btn btn-warning" onclick="localStorage.clear();document.getElementById('player1form').reset();document.getElementById('player2form').reset();document.getElementById('player3form').reset();">Reset Glory</button>
             </div>
         </div>
     </div>
