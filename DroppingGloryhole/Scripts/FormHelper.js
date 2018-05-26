@@ -24,13 +24,33 @@ let loadFormDataFromStorage = function () {
 };
 let setPlayerNames = function () {
     let p1name = document.getElementById("player1Name").value;
-    document.getElementById("player1Tab").innerHTML = p1name == "" ? "Player 1" : p1name;
+    if (p1name == "") {
+        $("#player1Tab").hide();
+    } else {
+        $("#player1Tab").show();
+        document.getElementById("player1Tab").innerHTML = p1name;
+    }
     let p2name = document.getElementById("player2Name").value;
-    document.getElementById("player2Tab").innerHTML = p2name == "" ? "Player 2" : p2name;
+    if (p2name == "") {
+        $("#player2Tab").hide();
+    } else {
+        $("#player2Tab").show();
+        document.getElementById("player2Tab").innerHTML = p2name;
+    }
     let p3name = document.getElementById("player3Name").value;
-    document.getElementById("player3Tab").innerHTML = p3name == "" ? "Player 3" : p3name;
+    if (p3name == "") {
+        $("#player3Tab").hide();
+    } else {
+        $("#player3Tab").show();
+        document.getElementById("player3Tab").innerHTML = p3name;
+    }
     let p4name = document.getElementById("player4Name").value;
-    document.getElementById("player4Tab").innerHTML = p4name == "" ? "Player 4" : p4name;
+    if (p4name == "") {
+        $("#player4Tab").hide();
+    } else {
+        $("#player4Tab").show();
+        document.getElementById("player4Tab").innerHTML = p4name;
+    }
 };
 let clearGloryStorage = function () {
     $("input").each(function () {
