@@ -59,6 +59,7 @@ let clearGloryStorage = function () {
         }
     });
 };
+
 $(document).ready(subscribeEvents);
 $(document).ready(loadFormDataFromStorage);
 $(document).ready(setPlayerNames);
