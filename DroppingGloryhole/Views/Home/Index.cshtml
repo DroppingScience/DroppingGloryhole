@@ -254,6 +254,7 @@
         <div id="options" class="tab-pane fade">
             <div class="container" style="background-color: #d3d3d3;border: 1px solid #ccc; border-radius: 12px">
                 <h4>Player names:</h4>
+                <p>Leave empty to hide player tab</p>
                 <form id="playerOptionsForm" class="form-inline">
                     <div class="form-group">
                         <div class="input-group">
@@ -285,6 +286,9 @@
             <br />
             <br />
             <button type="button" class="btn btn-warning" onclick="clearGloryStorage();document.getElementById('player1form').reset();document.getElementById('player2form').reset();document.getElementById('player3form').reset();document.getElementById('player4form').reset();">Reset Glory</button>
+            <br />
+            <br />
+            <button type="button" class="btn btn-danger" onclick="localStorage.clear()">Clear storage (glory & names)</button>
         </div>
     </div>
 </div>
