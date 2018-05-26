@@ -26,6 +26,11 @@
 
     // initial call on page load
     setPlayerNames();
+
+    // open options tab if no player1 name is stored
+    if (!localStorage.getItem("player1Name")) {
+        $("#optionsTab").click();
+    }
 };
 let setPlayerNames = function () {
     // set the inner text of the anchor tags for tabs 
