@@ -69,5 +69,13 @@ let clearGloryStorage = function () {
         }
     });
 };
+let clearAllStorage = function () {
+    document.getElementById("player1Name").value = "";
+    document.getElementById("player2Name").value = "";
+    document.getElementById("player3Name").value = "";
+    document.getElementById("player4Name").value = "";
+    localStorage.clear();
+    setPlayerNames();
+}
 
 $(document).ready(subscribeEvents);
