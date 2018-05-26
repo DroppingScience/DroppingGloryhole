@@ -6,45 +6,293 @@
 
 <div id="accordion">
     <div class="card">
-        <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Collapsible Group Item #1
-                </button>
-            </h5>
+        <div class="card-header" id="rulesHeading1" data-toggle="collapse" data-target="#rulesSection1">
+            <h3 class="mb-0 text-center">General</h3>
         </div>
 
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div id="rulesSection1" class="collapse" data-parent="#accordion">
             <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <p>Glory Points (and one glory card) are awarded to players every time they:</p>
+                <ul>
+                    <li>Defeat a Player or NPC (Defined as surviving and winning Naval or Crew Combat)</li>
+                    <li>Selling 3 or more Cargo Cards in a port where the goods sold are ‘in demand’</li>
+                    <li>Plundering 12+ Gold in a Merchant Raid</li>
+                    <li>Completing a Mission</li>
+                    <li>Finding a Rumor to be true</li>
+                    <li>Buying a Galleon or Frigate (only once per Captain)</li>
+                </ul>
+                <p>
+                    If several players reach 10 or more in the same turn, the
+                    player with the most points on the Glory track on the
+                    board (i.e. not counting points from their stash) wins
+                    the game. If there is still a tie, the player with the largest
+                    amount of stash wins. If this does not resolve the tie,
+                    both players are declared winners
+                </p>
+                <p>The game ends immediately if either of the following occurs:</p>
+                <ul>
+                    <li>There are no more Event Cards at the beginning of a turn</li>
+                    <li>A Captain dies, and there are no more Captains left to draw</li>
+                </ul>
+                <p>You may retire a captain during your turn, to do so:</p>
+                <ul>
+                    <li>Must start your turn in a port, and take no actions this turn</li>
+                    <li>Your captain commits sudoku, follow rules regarding captain death</li>
+                </ul>
             </div>
         </div>
     </div>
+
     <div class="card">
-        <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Collapsible Group Item #2
-                </button>
-            </h5>
+        <div class="card-header" id="rulesHeading2" data-toggle="collapse" data-target="#rulesSection2">
+            <h3 class="mb-0 text-center">Port Actions</h3>
         </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+
+        <div id="rulesSection2" class="collapse" data-parent="#accordion">
             <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <ul>
+                    <li>Sell Goods (must be your first port activity)</li>
+                    <li>Buy Goods</li>
+                    <li>Visit Shipyard</li>
+                    <li>Recruit crew (leadership roll, if failed 2g/ea)</li>
+                    <li>Acquire a Rumor (2g and influence roll)</li>
+                    <li>Claim a Mission</li>
+                    <li>Stash Gold (home-port only)</li>
+                </ul>
+                <p>If you “buy goods” in the same port two turns in a row,  you only draw 3 Cargo Cards.</p>
+                <p> While in port there is no limit to how many Cargo
+                    Cards you may posses. However, once you leave port
+                    you must discard any cards in excess of your ship’s
+                    current “Cargo” value</p>
+                <p>When you are in your home port you may freely spend Gold from your stash or move it onto your ship</p>
             </div>
         </div>
     </div>
+
     <div class="card">
-        <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Collapsible Group Item #3
-                </button>
-            </h5>
+        <div class="card-header" id="rulesHeading3" data-toggle="collapse" data-target="#rulesSection3">
+            <h3 class="mb-0 text-center">Shipyard Actions</h3>
         </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+
+        <div id="rulesSection3" class="collapse" data-parent="#accordion">
             <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <ul>
+                    <li>Buy Repair (2g/dmg except crew)</li>
+                    <li>Buy Ship Modifications (3g)</li>
+                    <li>Buy Special Weapons (3g/ea)</li>
+                    <li>Buy/Sell Ship (when selling: +1g per modification, -1g per damage except crew)
+                        <ul>
+                            <li>Ship (Buy/Sell)</li>
+                            <li>Sloop (10/5)</li>
+                            <li>Flute (10/5)</li>
+                            <li>Frigate (35/10)</li>
+                            <li>Galleon (35/10)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>When you buy a new ship you bring the “Crew” from your old ship</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="rulesHeading4" data-toggle="collapse" data-target="#rulesSection4">
+            <h3 class="mb-0 text-center">Merchant Raids</h3>
+        </div>
+
+        <div id="rulesSection4" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <ol>
+                    <li>Draw 3 Cargo Cards and place them face up in front of you.</li>
+                    <li>Roll your Captain’s Seamanship</li>
+                    <li>
+                        One at a time you may use each success to:
+                        <ul>
+                            <li>Draw an additional card
+                            <li>Discard a card or
+                            <li>Exchange a card
+                        </ul>
+                    </li>
+                </ol>
+                <p>
+                   <span class="rule-important">Important:</span> You can only perform a Merchant Raid if
+                    none of your ship’s hit-locations are destroyed (i.e. have
+                    been reduced to zero).
+                </p>
+
+                <p><span class="rule-important">Important:</span> When deciding the nationality of the merchant you may decide not to engage the merchant to avoid an unwanted bounty.</p>
+
+                <p>Note: Half of the cards have an Escape and half have a Hit.</p>
+
+                <p>After rolling your Seamanship skill you may spend a
+                Special Weapons token to convert a failed die into a
+                success. You may spend several tokens on the same roll
+                if you wish. It makes no difference which type of token you spend</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="rulesHeading5" data-toggle="collapse" data-target="#rulesSection5">
+            <h3 class="mb-0 text-center">Bounties</h3>
+        </div>
+
+        <div id="rulesSection5" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <p>You get a Bounty immediately after:</p>
+                <ul>
+                <li>Starting combat with a non-pirate ship (This includes Merchant Raids)</li>
+                <li>Defeating a Naval ship (Sinking it or winning Crew Combat)</li>
+                </ul>
+
+                <p>Note: Engaging and defeating a Naval ship results in two bounties</p>
+
+                <p><span class="rule-important">Important:</span> When naval ships scout for a player pirate, they will roll a number
+                of scouting dice equal to the naval captain's indicated scouting stat OR the number
+                of bounties the player has from the naval captain's nation, whichever is greatest.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="rulesHeading6" data-toggle="collapse" data-target="#rulesSection6">
+            <h3 class="mb-0 text-center">Glory Cards</h3>
+        </div>
+
+        <div id="rulesSection6" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <p>Max hand size is 4 glory cards. You may draw a 5th
+                but then must immediately decide which to discard.
+                You may not play a glory card while you have 5 of them.</p>
+
+                <p>There are 8 types of Specialists. There are
+                two of each type available in the Glory Card deck.
+                You may employ any number of Specialists, but only one
+                of the same type.</p>
+
+                <p>Some cards are played during another players turn. If
+                you wish to play such a card then announce it when the
+                card says it must be played (without revealing the specific
+                card). Other players may now announce if they also wish
+                to play cards at this point. Players place their announced
+                cards in front of them. Resolve the cards in turn order,
+                starting with the current player. A player may decline
+                to play his announced card once it’s his turn, but must
+                reveal the card he intended to play.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="rulesHeading7" data-toggle="collapse" data-target="#rulesSection7">
+            <h3 class="mb-0 text-center">Combat</h3>
+        </div>
+
+        <div id="rulesSection7" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <ol>
+                    <li>
+                        Declare action
+                        <ul>
+                            <li>Aggressor declares first</li>
+                            <li>"Shoot" must be chosen on the first round</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Roll Seamanship
+                        <ul>
+                            <li>+1 die to the captain with 2+ greater maneuverability</li>
+                            <li>Tie broken by the sum of faces shown by non-success dice (if still tied, both players lose - shoot actions are still resolved as both players being losers of Seamanship roll)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Action (only winner of Seamanship roll performs their action)
+                        <ul>
+                            <li>Shoot: Winner of Seamanship fires ALL cannons. Loser fires only a number of cannons equal to their successes rolled in Seamanship (but not greater than the number of cannons)</li>
+                            <li>Board: Crew Combat begins. If mutually assured destruction, resolve winner as you would in seamanship roll</li>
+                            <li>Flee: Escape only if you rolled a success AND your oponent rolled no successes</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <p>Special weapons:</p>
+                <ul>
+                    <li>Grappling hook: may be used after seamanship roll where you chose the board action. Discard your grappling hook to re-roll any number of your dice in an attempt to win the seamanship roll</li>
+                    <li>Chain-shot: after rolling to determine hit locations during the shoot action, discard chain-shot to convert all of your skulls to hits to mast</li>
+                    <li>Grapeshot: same as chain-shot, but convert skulls to hits to Crew</li>
+                </ul>
+
+                <p>Damage locations:</p>
+                <ul>
+                    <li>Hull: If destroyed you lose the battle and your captain dies</li>
+                    <li>Cargo: Lose storage capactiy, RANDOMLY discard cargo cards in excess of your capacity</li>
+                    <li>Masts: If destroyed roll only one die during Seamanship AND only able to choose shoot action</li>
+                    <li>Crew: If destroyed, can't choose board action and auto-lose crew combat if initiated by opponent</li>
+                    <li>Cannons: Lose cannons, duh</li>
+                </ul>
+</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="rulesHeading8" data-toggle="collapse" data-target="#rulesSection8">
+            <h3 class="mb-0 text-center">Rewards</h3>
+        </div>
+
+        <div id="rulesSection8" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <p>Defeating any player or NPC ship grants 1 glory point and 1 glory card</p>
+                <p>Defeating a player in CREW combat:</p>
+                <ul>
+                    <li>Gold on board</li>
+                    <li>Glory cards</li>
+                    <li>Cargo</li>
+                    <li>Rumors (not missions)</li>
+                    <li>Special Weapons</li>
+                    <li>Specialists</li>
+                    <li>Commandeer their ship</li>
+                </ul>
+                <p>Defeating NPC naval ship in CREW combat:</p>
+                <ul>
+                    <li>Draw 3 cargo from deck, get gold value shown</li>
+                    <li>Random discard a cargo card for each hit to the naval ship's cargo, keep the rest</li>
+                    <li>Commandeer their ship</li>
+                </ul>
+                <p>Defeating NPC pirate ship (as non-pirate only):</p>
+                <ul>
+                    <li>5 gold for sloop</li>
+                    <li>15 gold for frigate</li>
+                </ul>
+                <p>Defeating player pirates:</p>
+                <ul>
+                    <li>5g per bounty (choose 1 nation)</li>
+                    <li>You cannot get a reward from a nation that has a bounty on your head, or which your nation is at war with</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="rulesHeading9" data-toggle="collapse" data-target="#rulesSection9">
+            <h3 class="mb-0 text-center">Captain Death</h3>
+        </div>
+
+        <div id="rulesSection9" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <p>Discard:</p>
+                <ul>
+                    <li>Captain</li>
+                    <li>Glory, rumor, mission cards</li>
+                    <li>Ship</li>
+                    <li>Special weapons, cargo, un-stashed gold</li>
+                    <li>Bounties</li>
+                </ul>
+                <p>Follow standard player setup except:</p>
+                <ul>
+                    <li>If their is an NPC pirate in your new captain's home port sea-zone, you may draw another</li>
+                    <li>Only take gold from the bank if you have no gold stashed. If you have less 10 gold stashed, take it and take the difference from the bank</li>
+                    <li>Any leftover stashed gold is now stashed in your new captain's home port</li>
+                </ul>
             </div>
         </div>
     </div>
