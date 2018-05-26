@@ -190,37 +190,40 @@
             </form>
         </div>
         <div id="options" class="tab-pane fade">
-            <div class="container">
+            <div class="container" style="background-color: #d3d3d3;border: 1px solid #ccc; border-radius: 12px">
+                <h4>Player names:</h4>
                 <form id="playerOptionsForm" class="form-inline">
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-addon"><span>Player 1: </span></div>
-                            <input type="text" class="form-control" id="player1Name" value="Player1" data-ignore-save="true">
+                            <input type="text" class="form-control" id="player1Name" value="Player1">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-addon"><span>Player 2: </span></div>
-                            <input type="text" class="form-control" id="player2Name" value="Player2" data-ignore-save="true">
+                            <input type="text" class="form-control" id="player2Name" value="Player2">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-addon"><span>Player 3: </span></div>
-                            <input type="text" class="form-control" id="player3Name" value="Player3" data-ignore-save="true">
+                            <input type="text" class="form-control" id="player3Name" value="Player3">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-addon"><span>Player 4: </span></div>
-                            <input type="text" class="form-control" id="player4Name" value="Player4" data-ignore-save="true">
+                            <input type="text" class="form-control" id="player4Name" value="Player4">
                         </div>
                     </div>
                 </form>
-
-
-                    <button type="button" class="btn btn-warning" onclick="localStorage.clear();document.getElementById('player1form').reset();document.getElementById('player2form').reset();document.getElementById('player3form').reset();">Reset Glory</button>
+                <button type="button" class="btn btn-success pull-right" onclick="setPlayerNames()">Apply</button>
             </div>
+            <br />
+            <br />
+            <button type="button" class="btn btn-warning" onclick="clearGloryStorage();document.getElementById('player1form').reset();document.getElementById('player2form').reset();document.getElementById('player3form').reset();document.getElementById('player4form').reset();">Reset Glory</button>
+            <button type="button" class="btn btn-danger" onclick="$('#player3Tab').toggle();">Hide Tab</button>
         </div>
     </div>
 </div>
